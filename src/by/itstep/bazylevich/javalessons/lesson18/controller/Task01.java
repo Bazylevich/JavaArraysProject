@@ -1,5 +1,6 @@
 package by.itstep.bazylevich.javalessons.lesson18.controller;
 
+import by.itstep.bazylevich.javalessons.lesson18.util.ArrayInitializer;
 import by.itstep.bazylevich.javalessons.lesson18.util.Convertor;
 import by.itstep.bazylevich.javalessons.lesson18.view.Printer;
 
@@ -16,6 +17,9 @@ public class Task01 {
         } while(size <= 0);
 
         int[] array = new int [size];
+
+        //ArrayInitializer.userInit(array);
+        ArrayInitializer.randomInit(array);
 
         Printer.print(Convertor.toString(array));
 
