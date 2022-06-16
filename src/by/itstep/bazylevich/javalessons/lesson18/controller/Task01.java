@@ -1,5 +1,6 @@
 package by.itstep.bazylevich.javalessons.lesson18.controller;
 
+import by.itstep.bazylevich.javalessons.lesson18.util.Convertor;
 import by.itstep.bazylevich.javalessons.lesson18.view.Printer;
 
 import java.util.Scanner;
@@ -15,6 +16,8 @@ public class Task01 {
         } while(size <= 0);
 
         int[] array = new int [size];
+
+        Printer.print(Convertor.toString(array));
 
         //logic
         //output result
