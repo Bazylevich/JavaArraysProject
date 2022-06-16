@@ -1,5 +1,6 @@
 package by.itstep.bazylevich.javalessons.lesson18.controller;
 
+import by.itstep.bazylevich.javalessons.lesson18.model.logic.ArrayWorker;
 import by.itstep.bazylevich.javalessons.lesson18.util.ArrayInitializer;
 import by.itstep.bazylevich.javalessons.lesson18.util.Convertor;
 import by.itstep.bazylevich.javalessons.lesson18.view.Printer;
@@ -24,6 +25,16 @@ public class Task01 {
         Printer.print(Convertor.toString(array));
 
         //logic
+
+        int sum = ArrayWorker.sum(array);
+        int max = ArrayWorker.max(array);
+        int min = ArrayWorker.min(array);
+        double avg = ArrayWorker.avg(array);
+
+        String msg = String.format("\nSum of array alements = %d.\n"+
+                     " Max element = %d, min element = %d.\n"+
+                    "Average sum = %.2f", sum, max, min,avg);
         //output result
+        Printer.print(msg);
     }
 }
